@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .widget {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a box-shadow for pop-up effect */
+            border-collapse: collapse;
+            max-height: 10px;
+            width: 100%;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .table th {
+            background-color: #f2f2f2;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table tr:hover {
+            background-color: #ddd;
+        }
+        .btn {
+            background-color: #007bff; /* Blue background */
+            color: #fff; /* White text */
+            padding: 10px 20px; /* Padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Add your widgets here -->
+        <h2>OTHER ACCOUNTS</h2>
+        <br>
+        <div class="widget">
+            <h2>SRT VS SRD</h2>
+            <table class="table" style="height: 10px;">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">SRT</th>
+                        <th scope="col">Creation Date</th>
+                        <th scope="col">SRD</th>
+                        <th scope="col">Creation Date</th>
+                        <th scope="col">SRTTO</th>
+                        <th scope="col">Creation Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>SRD-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn" type="button">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>SRD-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td>SRT-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn" type="button">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>SRT-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td>SRT-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td>SRTTO-0XXXX</td>
+                        <td>MM-DD-YYYY</td>
+                        <td>
+                            <button class="btn" type="button">View Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="widget">
+            <h2>STO STI Register</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Order to process</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>SO/CO- WP Date</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>RTV-SRT Received Date vs SRT posted</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>On time in full</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Bin to Bin</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Put Away</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Good issue Posting</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>DR/CDR</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Good Receipt Posting</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>RF</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>WP vs SP</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>DR vs SI</h2>
+        </div>
+
+        <h2>WATSONS</h2>
+        <br>
+        <div class="widget">
+            <h2>Warehouse Utilization ( Total pallet used and empty )</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Sales Order Status ( with WP or SP, Picking with DR )</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Unposted Transaction</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Item with Negative Balanced</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Upcoming Inbound Delivery</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Pending for SRT</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Pending for Put Away</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Floating STO transaction</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Near Expiry Item (18 months below)</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Slow Moving Item</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Inventory Status ( Available SOH, reserved for SO)</h2>
+        </div>
+
+        <br>
+        <h2>DL</h2>
+        <br>
+        <div class="widget">
+            <h2>On time in Full Deliveries</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>On time RTV</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Cost Efficiency</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Customer Service Level</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Cost to Sales ( National )</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Fill Rate</h2>
+        </div>
+
+        <h2>CS</h2>
+        <br>
+        
+        <div class="widget">
+            <h2>No. of Open SO</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>No. of Open CO</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>No. of Open SRD</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>No. of Open DR</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Critical Items at least Top 10</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>Top Items at least Top 10</h2>
+        </div>
+        
+        <div class="widget">
+            <h2>No. of open CDR</h2>
+        </div>
+
+
+    </div>
+</body>
+</html>
